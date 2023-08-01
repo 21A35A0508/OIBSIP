@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;
-  }
+    text-align: center;
+    }
   
   nav {
     height: 80px;
     font-size: 100rem bold;
     font-weight: bold;
-    background: #fdcc04;
+    background: #000000ee;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +29,7 @@
   
   nav a {
     text-decoration: none;
-    color: #000;
+    color: #ffffff;
     padding: 0 1.5rem;
   }
   
@@ -36,7 +38,8 @@
   }
   
   .hero {
-    background: #fdcc04;
+    background: #ffffff;
+    background-image: image("https://img.freepik.com/premium-vector/white-elegant-texture-background_745217-607.jpg");
   }
   
   .hero-container {
@@ -57,36 +60,67 @@
   
   .column-left h1 {
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size:8rem;
+    font-family: 'Staatliches', cursive;
+    font-weight: bolder;
   }
   
   .column-left p {
     margin-bottom: 2rem;
+    margin-top: -2px;
     font-size: 1.5rem;
-    line-height: 1.5;
+    line-height: 2.5;
   }
   
   button {
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
-    color: #fdcc04;
+    color: #ffffff;
     background: #000;
     cursor: pointer;
     border-radius: 50px;
+
   }
   
   button:hover {
-    background: #fff;
-    color: #000;
+    background: #2b2b2b;
+    color: #ffffff;
   }
   
   .column-right {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0rem 2rem;
+    border: 3px solid rgb(128, 128, 128);
+    border-radius: 7px;
   }
+  form{
+    width: 80%;
+    height: 50%;
+    align-items: left;
+    margin-top: 10%;
+
+  }
+  input{
+    font-size: 20px;
+    text-align: left;
+    border: none;
+    border: 2px solid black;
+    border-radius: 7px;
+    margin: 10px;
+    padding: 5px;
+    
+  }
+  #convert{
+background-color: red;
+margin-bottom: 20px;
+}
+  #celsius{
+    margin-left: 20px;
+  }
+
+
   
   @media screen and (max-width: 768px) {
     .hero-container {
@@ -97,7 +131,8 @@
       }
       h1 {
         font-family: sans-serif;
-        color: #70b2e5;
+        color: #000000;
+        font-size: 2rem;
       }
       :-moz-placeholder { 
          color: #ccc;  
@@ -108,6 +143,23 @@
       button {
         padding: 10px;
         font-size: 1.2em;
-        color: #545454;
+        color: #ffffff;
       }
+  }
+
+  @media screen and (max-width: 768px) {
+
+    .column-left h1 {
+      font-size: 6rem;
+    }
+    .column-right{
+      border: none;
+    }
+    .ddd{
+      padding: 12px 18px;
+    }
+    form{
+      border: 2px solid rgba(189, 189, 189, 0.15);
+      padding: 20px ;
+    }
   }

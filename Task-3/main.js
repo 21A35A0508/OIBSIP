@@ -8,14 +8,17 @@ function tempConvert() {
   
   if (fahrenheit != '') {
         celsius = (parseFloat(fahrenheit) - 32) / 1.8;
+        alert(parseFloat(celsius).toFixed(1));
     } else {
         fahrenheit = (parseFloat(celsius) * 1.8) + 32;
+        alert(parseFloat(fahrenheit).toFixed(1));
+
     }
   
 
-
-    document.getElementById('fahrenheit').value = parseFloat(fahrenheit).toFixed(1);
-    document.getElementById('celsius').value = parseFloat(celsius).toFixed(1);
+    
+    // document.getElementById('fahrenheit').value = parseFloat(fahrenheit).toFixed(1);
+    // document.getElementById('celsius').value = parseFloat(celsius).toFixed(1);
 }
 
 
